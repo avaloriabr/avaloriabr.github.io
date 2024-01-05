@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Avaloria - Authenticator</title>
+    <title>Verify for Discord</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -143,13 +143,8 @@
         }
     </style>
 </head>
-    <div class="congratulation-wrapper text-center">
-        <!-- Seu conteúdo existente... -->
-    </div>
-    <p class="footer">© 2024 Comunidade Avaloria. Todos os direitos reservados.</p>
 
 <body>
-	
     <div class="congratulation-wrapper text-center">
         <!-- Do not delete elements or change element ID names. This will break the site -->
         <div id="successCheck" hidden class="congratulation-contents-icon">
@@ -170,28 +165,28 @@
         You can set vc-verify-error for a custom message when an error occurs. This is only for the title, description shows the same as normal.
         -->
         <h4 id="serverTitle"
-        vc-invalid-domain="Dominio Invalido! Tente novamente!"
-        vc-captcha-require="Complete o captcha primeiro!"
-        vc-verify-success="Verificado!"
-        vc-verify-error="Erro! Tente verificar-se novamente."
+        vc-invalid-domain="Invalid domain"
+        vc-captcha-require="Complete captcha below"
+        vc-verify-success="Verified!"
+        vc-verify-error="Error"
         class="congratulation-contents-title">
-            Verificando...
+            Loading..
         </h4>
         <p id="serverInstructions"
         vc-invalid-domain="You must host this online, follow our instructions."
         vc-captcha-require="This server requires a captcha. Click the captcha below to verify."
         vc-verify-success="custom"
         class="congratulation-contents-para">
-            Por favor, verifique-se para fazer parte da FAMILIA AVALORIA...
+            Please verify for our server...
         </p>
         <!-- myWidget is for the captcha if you have that option enabled. It's recommended to not delete this element if you don't have to -->
         <div id="myWidget"></div>
-        <a id="serverVerifyBtn" hidden href="javascript:void(0)" class="cmn-btn btn-bg-1"> Verificar </a>
+        <a id="serverVerifyBtn" hidden href="javascript:void(0)" class="cmn-btn btn-bg-1"> Verify </a>
         <br>
         <!-- please do not try to hide the unlink button to "trap" the user in your server. We will ban you if we notice you doing this. -->
-        <a id="serverUnlinkBtn" hidden href="javascript:unlinkServer()" class="cmn-btn btn-bg-2"> Desistir </a>
+        <a id="serverUnlinkBtn" hidden href="javascript:unlinkServer()" class="cmn-btn btn-bg-2"> Unlink </a>
     </div>
-    <p class="footer">© 2024 Comunidade Avaloria. Todos os direitos reservados.</p>
+    <p class="footer">Email <a href="mailto:abuse@vaultcord.com">abuse@vaultcord.com</a> to report illegal servers or servers selling members</p>
 </body>
 
 </html>
