@@ -15,32 +15,30 @@
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <style>
    body {
+    backgrbody {
     background-color: #1a1a1a;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-}
-
-.auth-wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+    padding: 0;
     background: linear-gradient(45deg, #2c2f33, #111214);
 }
 
-.auth-container {
+.congratulation-wrapper {
     max-width: 550px;
     padding: 30px 20px;
     background-color: #202225;
     border-radius: 10px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-.auth-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.congratulation-contents-icon {
+    display: inline-block;
     height: 100px;
     width: 100px;
     background-color: #7289da;
@@ -48,7 +46,6 @@
     font-size: 50px;
     border-radius: 50%;
     margin-bottom: 30px;
-    /* Adicionando animação para o ícone */
     animation: spin 2s linear infinite;
 }
 
@@ -57,17 +54,16 @@
     100% { transform: rotate(360deg); }
 }
 
-.auth-title {
+.congratulation-contents-title {
     font-family: 'CustFont';
     color: #FFF;
     font-size: 32px;
     line-height: 36px;
     margin: -6px 0 0;
-    /* Adicionando sombra de texto para o título */
     text-shadow: 2px 2px 4px #000000;
 }
 
-.auth-contents-para {
+.congratulation-contents-para {
     color: #FFF;
     font-size: 16px;
     line-height: 24px;
@@ -84,13 +80,11 @@
     display: inline-block;
     margin-top: 20px;
     transition: all 0.3s ease-in-out;
-    /* Adicionando efeito de hover para o botão */
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .cmn-btn:hover {
     background: #5865f2;
-    /* Adicionando efeito de hover para o botão */
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
@@ -115,9 +109,7 @@
 </head>
  
 <body>
-
     <div class="congratulation-wrapper text-center">
-        <!-- Do not delete elements or change element ID names. This will break the site -->
         <div id="successCheck" hidden class="congratulation-contents-icon">
             <i class="fas fa-check"></i>
         </div>
@@ -129,12 +121,6 @@
         </div>
         <img id="serverIcon" hidden style="border-radius: 51%;height: 110px;width: 110px;margin-bottom:10px;"
             src="https://avatars.githubusercontent.com/u/138615525?s=200&v=4">
-        <!--
-        You can set vc-invalid-domain for a custom message when trying to access a page downloaded to computer (not very likely error)
-        You can set vc-captcha-require for a custom message to show if your server has the captcha setting enabled
-        You can set vc-verify-success for a custom message after the member has verified
-        You can set vc-verify-error for a custom message when an error occurs. This is only for the title, description shows the same as normal.
-        -->
         <h4 id="serverTitle"
         vc-invalid-domain="Dominio Invalido!"
         vc-captcha-require="Complete o captcha antes!"
@@ -150,12 +136,12 @@
         class="congratulation-contents-para">
             Por favor, verifique-se para entrar para familia...
         </p>
-        <!-- myWidget is for the captcha if you have that option enabled. It's recommended to not delete this element if you don't have to -->
         <div id="myWidget"></div>
         <a id="serverVerifyBtn" hidden href="javascript:void(0)" class="cmn-btn btn-bg-1"> Verificar </a>
         <br>
     </div>
     <center><p class="footer">© Avaloria 2024. Todos os direitos reservados.</p></center>
 </body>
+
 
 </html>
