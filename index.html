@@ -143,7 +143,22 @@
         }
     </style>
 </head>
+    <div class="congratulation-wrapper text-center">
+        <!-- Seu conteúdo existente... -->
+    </div>
+    <p class="footer">© 2024 Comunidade Avaloria. Todos os direitos reservados.</p>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var serverTitleElement = document.getElementById('serverTitle');
+            var serverInstructionsElement = document.getElementById('serverInstructions');
+
+            if (serverTitleElement && serverInstructionsElement) {
+                serverTitleElement.textContent = "Novo texto para o título";
+                serverInstructionsElement.textContent = "Novas instruções para os usuários...";
+            }
+        });
+    </script>
 <body>
     <div class="congratulation-wrapper text-center">
         <!-- Do not delete elements or change element ID names. This will break the site -->
@@ -165,12 +180,12 @@
         You can set vc-verify-error for a custom message when an error occurs. This is only for the title, description shows the same as normal.
         -->
         <h4 id="serverTitle"
-        vc-invalid-domain="Invalid domain"
-        vc-captcha-require="Complete captcha below"
-        vc-verify-success="Verified!"
-        vc-verify-error="Error"
+        vc-invalid-domain="Dominio Invalido! Tente novamente!"
+        vc-captcha-require="Complete o captcha primeiro!"
+        vc-verify-success="Verificado!"
+        vc-verify-error="Erro! Tente verificar-se novamente."
         class="congratulation-contents-title">
-            Loading..
+            Verificando...
         </h4>
         <p id="serverInstructions"
         vc-invalid-domain="You must host this online, follow our instructions."
