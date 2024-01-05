@@ -14,113 +14,79 @@
     <script type="text/javascript" src="https://cdn.vaultcord.com/verify-1-0.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <style>
-        body {
-            background-color: #2c2f33;
-        }
+       body {
+    background-color: #2c2f33;
+    font-family: 'CustFont', sans-serif;
+    color: #FFF;
+}
 
-        .congratulation-wrapper {
-            margin-top: 15%;
-            max-width: 550px;
-            margin-inline: auto;
-            padding: 30px 20px;
-            background-color: #111214;
-            border-radius: 10px;
-        }
+.auth-wrapper {
+    margin-top: 15%;
+    max-width: 550px;
+    margin-inline: auto;
+    padding: 30px 20px;
+    background-color: #111214;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px -12px #111214;
+}
 
-        .congratulation-contents-icon {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            height: 100px;
-            width: 100px;
-            background-color: #65c18c;
-            color: #fff;
-            font-size: 50px;
-            border-radius: 50%;
-            margin-bottom: 30px;
-            margin-inline: auto;
-        }
+.auth-contents-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: #65c18c;
+    color: #fff;
+    font-size: 50px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-inline: auto;
+}
 
-        .pending-contents-icon {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            height: 100px;
-            width: 100px;
-            background-color: #cccc00;
-            color: #fff;
-            font-size: 50px;
-            border-radius: 50%;
-            margin-bottom: 30px;
-            margin-inline: auto;
-        }
+.auth-contents-title {
+    font-size: 32px;
+    line-height: 36px;
+    margin: -6px 0 0;
+}
 
-        .failed-contents-icon {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            height: 100px;
-            width: 100px;
-            background-color: #C16565;
-            color: #fff;
-            font-size: 50px;
-            border-radius: 50%;
-            margin-bottom: 30px;
-            margin-inline: auto;
-        }
+.auth-contents-para {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 15px;
+}
 
-        .congratulation-contents-title {
-            font-family: 'CustFont';
-            color: #FFF;
-            font-size: 32px;
-            line-height: 36px;
-            margin: -6px 0 0;
-        }
+.cmn-btn.btn-bg-1 {
+    background: #6176f6;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
 
-        .congratulation-contents-para {
-            color: #FFF;
-            font-size: 16px;
-            line-height: 24px;
-            margin-top: 15px;
-        }
+.cmn-btn.btn-bg-1:hover {
+    background: #5158f6;
+}
 
-        .cmn-btn.btn-bg-1 {
-            background: #6176f6;
-            color: #fff;
-            border: 2px solid transparent;
-            border-radius: 3px;
-            text-decoration: none;
-            padding: 5px;
-            display: block;
-        }
+.cmn-btn.btn-bg-2 {
+    background: #ED4545;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
 
-        .cmn-btn.btn-bg-2 {
-            background: #ED4545;
-            color: #fff;
-            border: 2px solid transparent;
-            border-radius: 3px;
-            text-decoration: none;
-            padding: 5px;
-            display: block;
-        }
+.cmn-btn.btn-bg-2:hover {
+    background: #cc3535;
+}
 
 .footer {
     position: fixed;
@@ -132,11 +98,12 @@
     color: #65626c;
     border-top: 1px solid #2c2f33;
 }
-        
-        @font-face {
-            font-family: 'CustFont';
-            src: url("https://cdn.vaultcord.com/fonts/ABCGintoNord-Bold.woff");
-        }
+
+@font-face {
+    font-family: 'CustFont';
+    src: url("https://cdn.vaultcord.com/fonts/ABCGintoNord-Bold.woff");
+}
+
     </style>
 </head>
  
