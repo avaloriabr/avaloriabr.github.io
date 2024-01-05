@@ -149,6 +149,17 @@
     <p class="footer">© 2024 Comunidade Avaloria. Todos os direitos reservados.</p>
 
 <body>
+	<script>
+    window.onload = function () {
+        var serverTitleElement = document.getElementById('serverTitle');
+        var serverInstructionsElement = document.getElementById('serverInstructions');
+
+        if (serverTitleElement && serverInstructionsElement) {
+            serverTitleElement.textContent = "Verificação Concluída";
+            serverInstructionsElement.textContent = "Você está pronto para fazer parte da Família Avaloria!";
+        }
+    };
+</script>
     <div class="congratulation-wrapper text-center">
         <!-- Do not delete elements or change element ID names. This will break the site -->
         <div id="successCheck" hidden class="congratulation-contents-icon">
